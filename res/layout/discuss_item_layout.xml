@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+    
+    <RelativeLayout
+        android:id="@+id/aboutFloorer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/floorImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/l0" />
+
+        <TextView
+            android:id="@+id/floorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/floorImg"
+            android:text="楼主名字"
+             android:textColor="#272727"
+            android:textSize="10sp" />
+             <TextView
+            android:id="@+id/ownerFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/floorName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/floorImg"
+            android:text="第几楼"
+            android:textColor="#272727"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/floorTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/floorName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ownerFloor"
+            android:text="楼发帖时间"
+            android:textColor="#272727"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/floorName"
+            android:src="@drawable/icon_grade_lv1" />
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_collecton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sendDis"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，"
+        android:layout_below="@id/aboutFloorer"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/contentDis"
+         android:textColor="#272727"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea"
+        android:layout_below="@id/contentDis"
+        android:layout_marginTop="5dp"
+          android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:id="@+id/hengxian"/>
+    <com.zhima.opendoor.view.MyListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sencondPinglun"
+        android:orientation="vertical"
+        android:layout_below="@id/hengxian"
+        android:layout_marginTop="10dp"
+           android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+         android:divider="#eaeaea"
+         android:dividerHeight="0.2dp"
+        
+        >
+</com.zhima.opendoor.view.MyListView>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3385ff"
+        android:text="点击查看更多"
+        android:layout_below="@id/sencondPinglun"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:id="@+id/forMore"
+         android:visibility="gone"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+       />
+
+</RelativeLayout>

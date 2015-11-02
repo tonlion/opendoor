@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/aboutFloorer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/floorImg1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/l0" />
+
+        <TextView
+            android:id="@+id/floorName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/floorImg1"
+            android:text="楼主名字"
+            android:textSize="10sp" />
+             <TextView
+            android:id="@+id/ownerFloor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/floorName1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/floorImg1"
+            android:text="第几楼"
+            android:textColor="#272727"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/floorTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/floorName1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ownerFloor1"
+            android:text="楼发帖时间"
+            android:textColor="#272727"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/floorName1"
+            android:src="@drawable/icon_grade_lv1" />
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_collecton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sendDis1"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，"
+        android:layout_below="@id/aboutFloorer"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#272727"
+        android:id="@+id/contentDis1"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea"
+        android:layout_below="@id/contentDis1"
+        android:layout_marginTop="5dp"
+          android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/hengxian"/>
+
+</LinearLayout>

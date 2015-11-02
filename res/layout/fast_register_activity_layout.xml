@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/bg_bar"
+    android:id="@+id/titleBar">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_centerVertical="true"
+        android:text="快捷注册"
+        android:textSize="21sp"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/icon_return_n"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/fastregister"/>
+
+    
+</RelativeLayout>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shurukuang"
+    android:layout_below="@id/titleBar">
+    <EditText android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="手机号码"
+        android:id="@+id/userId"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userId"
+        android:id="@+id/yanzhengma"
+        >
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="请输入手机验证码"
+        android:id="@+id/pwd"
+        android:layout_below="@id/userId"
+           android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+      />
+    <Button android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="获取验证码"
+        android:layout_weight="1"
+       android:background="#3385ff"
+       android:textColor="#fff"
+       android:layout_marginRight="8dp"
+       android:layout_gravity="center_vertical"
+       android:id="@+id/getMessage"
+        />
+  </LinearLayout>
+    <Button android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#a2e08d"
+        android:text="快捷注册"
+        android:textSize="23sp"
+        android:textColor="#fff"
+        android:layout_below="@id/yanzhengma"
+          android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fast_register"
+        android:enabled="false"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#eaeaea" >
+     <RelativeLayout
+        android:id="@+id/gd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/module_img2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_background"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_mycenter_banner" />
+
+        <TextView
+            android:id="@+id/module_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/module_img2"
+            android:text="美食分享趴"
+             android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/favorNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/module_name2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/module_img2"
+            android:drawableLeft="@drawable/likeicon_actionbar_details"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="#272727"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/articleNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/module_name2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/favorNum2"
+            android:drawableLeft="@drawable/icon_edit_n_1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="#272727"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gd2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/gd1"
+        android:layout_marginTop="3dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="板块资料"
+        android:textSize="18sp" 
+          android:textColor="#272727"/>
+
+    <TextView
+        android:id="@+id/jianjie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gd2"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="简介"
+        android:textColor="#474747" />
+
+    <TextView
+        android:id="@+id/sameFriend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/jianjie"
+        android:layout_marginTop="3dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="同道中人"
+        android:textSize="18sp"
+          android:textColor="#272727" />
+
+</LinearLayout>

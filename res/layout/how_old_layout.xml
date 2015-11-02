@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+    
+    <Button
+        android:id="@+id/id_detect"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/id_getimg"
+        android:background="#3385ff"
+        android:text="检测"
+        android:textColor="#fff" />
+     <Button
+        android:id="@+id/id_getimg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="找到图片"
+        android:textColor="#fff"
+        android:background="#3385ff" 
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="20dp"/>
+
+   
+    <TextView
+        android:id="@+id/id_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/id_detect"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/id_detect" />
+
+    <ImageView
+        android:id="@+id/id_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_detect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/t4" />
+
+    <FrameLayout
+        android:id="@+id/id_waitting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/id_age_and_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hint"
+            android:drawableLeft="@drawable/male"
+            android:gravity="center"
+            android:text="111"
+            android:textColor="#ffff00ff"
+            android:textSize="22sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    
+
+</RelativeLayout>

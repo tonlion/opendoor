@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/newSearch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#262B4D"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/mokuaisousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/icon_return_n"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="搜索模块"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/contentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_below="@id/newSearch" >
+         <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_group_search_n_1"
+            android:layout_marginRight="8dp"
+            android:id="@+id/doSearch"/>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="搜索你感兴趣的模块"
+            android:paddingLeft="10dp" 
+            android:background="@drawable/line_background"
+            android:layout_toLeftOf="@id/doSearch"
+            />
+       
+ </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/moduleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contentSearch"
+        android:divider="#eaeaea"
+        android:dividerHeight="0.5dp" 
+        />
+    <LinearLayout
+        android:id="@+id/welcomelog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/qiaomen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="哎呀，网络连接失败了"
+            android:textColor="#c7c7c7" />
+    </LinearLayout>
+</RelativeLayout>

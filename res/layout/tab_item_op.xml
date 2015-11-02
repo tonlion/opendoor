@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="vertical"
+    android:gravity="center" >
+    <ImageView android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/real_select"
+        android:id="@+id/icon"
+        android:scaleType="fitXY"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="精选"
+        android:id="@+id/text"
+        android:gravity="center"/>
+
+</LinearLayout>

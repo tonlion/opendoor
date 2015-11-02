@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/newDelete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#262B4D" >
+
+        <TextView
+            android:id="@+id/deletedArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/icon_return_n"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="我的文章"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.example.swipemenulistview.swipemenulistview.SwipeMenuListView
+        android:id="@+id/id_swipelistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/newDelete" >
+    </com.example.swipemenulistview.swipemenulistview.SwipeMenuListView>
+
+    <LinearLayout
+        android:id="@+id/deleteArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/qiaomen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="还没有发布过任何东西哦~"
+            android:textColor="#c7c7c7" />
+    </LinearLayout>
+
+</RelativeLayout>

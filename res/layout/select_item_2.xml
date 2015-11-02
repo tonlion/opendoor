@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+   <ImageView android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:src="@drawable/pic_didian_1"
+       android:scaleType="fitXY"
+       android:id="@+id/singlePic"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="8dp"/>
+   <TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="18sp"
+       android:text="这是小单图的题目"
+       android:layout_marginTop="8dp"
+       android:layout_toRightOf="@id/singlePic"
+       android:id="@+id/titleSmall"
+       android:layout_marginLeft="5dp"/>
+   <TextView android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:maxLines="2"
+       android:text="这是小单图的内容项目木木木某某某某某某某某某某某某某某某某某某某某某某某某某某某某某某某某某llllllll"
+       android:layout_toRightOf="@id/singlePic"
+       android:layout_below="@id/titleSmall"
+       android:id="@+id/smallContent"
+       android:textColor="#a7a7a7"
+       android:layout_marginLeft="5dp"
+       />
+    <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/singlePic">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:background="#55272727"
+                android:text="美食分享趴"
+                android:id="@+id/modulenameSmall"
+                android:layout_marginLeft="8dp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                >
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_icon_lpb_praise_n_1"        
+                android:id="@+id/zan"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="521"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/zan"
+                android:id="@+id/zanshuSmall"/>
+                <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_icon_lpb_comment_n_1"        
+                android:id="@+id/pinglu"
+                android:layout_toRightOf="@id/zanshuSmall"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="521"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/pinglu"
+                android:id="@+id/pinglunSmall"/>
+            </RelativeLayout>
+     </RelativeLayout>
+    
+
+</RelativeLayout>

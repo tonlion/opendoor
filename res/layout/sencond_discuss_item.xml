@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal" 
+    android:descendantFocusability="blocksDescendants">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#3385ff"
+        android:text="楼主名字 :"
+        android:textStyle="bold"
+        android:id="@+id/floorName"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#272727"
+        android:layout_marginLeft="5dp"
+        android:text="评论内容，评论内容，评论内容v评论内容评论内容评论内容评论内容评论内"
+        android:id="@+id/floorContent"
+        android:layout_toRightOf="@id/floorName"
+        android:maxLines="2"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+   
+</RelativeLayout>

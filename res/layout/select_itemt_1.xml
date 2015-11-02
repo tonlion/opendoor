@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这个是一张大图的标题显示处"
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"/>
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_benba_1"
+            android:id="@+id/singleBig"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:background="#55272727"
+                android:text="美食分享趴"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/modulename"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                >
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_icon_lpb_praise_n_1"        
+                android:id="@+id/zan"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="521"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/zan"
+                android:id="@+id/zanshu"/>
+                <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_icon_lpb_comment_n_1"        
+                android:id="@+id/pinglu"
+                android:layout_toRightOf="@id/zanshu"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="521"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/pinglu"
+                android:id="@+id/pinglunshu"/>
+            </RelativeLayout>
+     </RelativeLayout>
+       
+
+
+</LinearLayout>

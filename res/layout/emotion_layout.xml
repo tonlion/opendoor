@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_botton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mmfooter_text_tabbutton_normal" >
+
+        <ImageView
+            android:id="@+id/iv_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/chatting_setmode_voice_btn_normal" />
+
+        <ImageView
+            android:id="@+id/iv_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/iv_icon_1"
+            android:src="@drawable/l0" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="190dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/iv_icon_2"
+            android:text="nihao" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/et_content"
+            android:background="@drawable/line_background"
+            android:text="发送"
+            android:textSize="16dip" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="135dip"
+            android:layout_below="@id/btn_send"
+            android:layout_gravity="center"
+            android:background="#f32f33"
+            android:visibility="gone" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_botton_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/page0_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/page_focused" />
+
+            <ImageView
+                android:id="@+id/page1_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="matrix"
+                android:src="@drawable/page_unfocused" />
+
+            <ImageView
+                android:id="@+id/page2_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="matrix"
+                android:src="@drawable/page_unfocused" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_botton"
+        android:layout_marginTop="9dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

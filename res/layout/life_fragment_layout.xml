@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea" >
+
+        <FrameLayout
+            android:id="@+id/xiaozi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_dredge_vip"
+            >
+            <ImageView android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:src="@drawable/zhimafuli"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="100dp"/>
+            <ImageView android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/zhongjiang"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55272727"
+                android:text="本活动最终解释权归芝麻开门所有"
+                android:textColor="#eaeaea"
+                android:gravity="right"
+                android:layout_gravity="bottom"
+               />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/xiaozi"
+            android:layout_marginTop="1dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/imgRep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_live_telecast" />
+
+            <TextView
+                android:id="@+id/reporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imgRep"
+                android:background="#fff"
+                android:text="芝麻天气"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/pop_float_arrow_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/r1"
+            android:layout_marginTop="1dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/imgGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_frs_game" />
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imgGame"
+                android:background="#fff"
+                android:text="芝麻游戏"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/pop_float_arrow_1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r2"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="How Old Are You ?" 
+                android:id="@+id/howOld"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="芝麻爱拼"
+                android:id="@+id/pintu" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/gameDetail"
+            android:layout_marginTop="1dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/imgTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_frs_ba_ticket" />
+
+            <TextView
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imgTool"
+                android:background="#fff"
+                android:text="芝麻情调"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/pop_float_arrow_1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r3"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="十年后" 
+                android:id="@+id/tenYeass"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="AnimeTaste"
+                android:id="@+id/catong" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="烧耳朵"
+                android:id="@+id/burningEar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="RainyMood" 
+                android:id="@+id/rainymood"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/toolDetail"
+            android:layout_marginTop="1dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/imgFly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_frs_ba_all" />
+
+            <TextView
+                android:id="@+id/fly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imgFly"
+                android:background="#fff"
+                android:text="带芝麻飞"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/pop_float_arrow_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/r4"
+            android:layout_marginTop="1dp"
+            android:background="#eaeaea" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

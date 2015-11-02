@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+   >
+   <ImageView android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:src="@drawable/pic_didian_1"
+       android:scaleType="fitXY"
+       android:id="@+id/moduleImg"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="8dp"/>
+   <TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="18sp"
+       android:text="这是小单图的题目"
+       android:layout_toRightOf="@id/moduleImg"
+       android:id="@+id/title"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"/>
+
+      <TextView
+          android:id="@+id/content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/title"
+          android:layout_marginTop="15dp"
+          android:layout_toRightOf="@id/moduleImg"
+          android:text="这是板块的简介"
+           android:layout_marginLeft="5dp"
+           android:singleLine="true"
+           android:textColor="#999" />
+
+      <Button android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:text="进入"
+          android:id="@+id/enter"
+          android:layout_alignParentRight="true"
+          android:background="#3385ff"
+          android:textColor="#fff"
+          android:textStyle="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="8dp"
+          />
+         <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="#eaeaea"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+        android:layout_below="@id/moduleImg"
+        android:layout_marginTop="3dp"
+        android:id="@+id/view"
+          />
+
+</RelativeLayout>

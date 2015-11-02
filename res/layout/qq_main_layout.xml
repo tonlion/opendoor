@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhima.opendoor.qqSlidingMenu.SlidingMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="match_parent"
+                layout="@layout/qq_sliding_menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/titleBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_bar" >
+
+                    <com.zhima.opendoor.view.CircleImageView
+                        android:id="@+id/toggle"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/zhima" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp" >
+
+                        <ImageView
+                            android:id="@+id/messageCenterXF"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_notification_message" />
+
+                        <ImageView
+                            android:id="@+id/chatdot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:src="@drawable/icon_chat_dot"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    layout="@layout/fragment_tab_host_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zhima.opendoor.qqSlidingMenu.SlidingMenu>
+
+</LinearLayout>

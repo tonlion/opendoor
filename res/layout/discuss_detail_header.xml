@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/aboutOwner"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/ownerImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/l0" />
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ownerImg"
+            android:text="楼主名字"
+            android:textSize="12sp" 
+            android:textColor="#272727"/>
+
+        <TextView
+            android:id="@+id/ownerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ownerName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ownerImg"
+            android:text="楼发帖时间"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ownerName"
+            android:src="@drawable/icon_grade_lv1" />
+    </RelativeLayout>
+     <WebView
+        android:id="@+id/article_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutOwner"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:textColor="#272727"
+        android:text="测试内容，测试内容，测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容
+        测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容测试内容，测试内容" />
+     <View android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="#eaeaea"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginTop="8dp"/>
+     <TextView android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:textColor="#c7c7c7"
+         android:text="多少个人"
+         android:layout_marginLeft="15dp"
+         android:gravity="center_vertical"
+         android:id="@+id/howManyZan"/>
+      <View android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="#eaeaea"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+       />
+
+</LinearLayout>

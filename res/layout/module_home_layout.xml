@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg" >
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/bg_bar"
+    android:id="@+id/titleBar">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_centerVertical="true"
+        android:text="美食"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/icon_return_n"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/moduleTitle"/>
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:src="@drawable/icon_edit_n_1"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/writeModule"
+        />
+</RelativeLayout>
+
+<com.handmark.pulltorefresh.library.PullToRefreshListView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/article_List"
+    android:dividerHeight="3dp"
+    android:divider="#eaeaea">
+    
+</com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>
